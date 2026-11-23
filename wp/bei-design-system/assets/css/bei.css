@@ -1608,6 +1608,15 @@ p, li, .faq__body, .lede, .prose p, .plan-card__desc, .article-body p,
 /* Article headings — tighter */
 .article-body h2 { margin-top: 25px !important; line-height: 1.1 !important; }
 
+/* Sign-in page: hide account icon and give the visual copy room on mobile */
+body[data-page="auth"] .login-wrap { display: none; }
+@media (max-width: 760px) {
+  .auth__visual { min-height: 360px !important; padding-top: 0; }
+  .auth__visual-copy { position: absolute; left: var(--pad); right: var(--pad); bottom: 22px; padding: 0; }
+  .auth__visual-copy h2 { font-size: 30px !important; line-height: 1.1 !important; }
+  .auth__visual-copy p { font-size: 14px; margin-top: 10px; }
+}
+
 
 /* Dynamic directory results */
 .dir-results-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding-top: 26px; }
