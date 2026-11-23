@@ -1,0 +1,150 @@
+{
+  "updated": "2026-11-22",
+  "note": "Real entries are taken from the authoritative BEI site. Entries marked with [PLACEHOLDER] are examples awaiting approved business data.",
+  "businesses": [
+    {
+      "id": "rulrr-com",
+      "name": "Rulrr.com",
+      "location": "North America",
+      "address": "Brickell, Miami, Miami-Dade County, Florida, 33131, United States",
+      "phone": "+1 786-692-8760",
+      "email": "jeff@rulrr.com",
+      "website": "https://www.rulrr.com/",
+      "categories": ["Business Services", "Information Technology", "Retail"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "Business services, information technology and retail based in Miami."
+    },
+    {
+      "id": "hustle-harder",
+      "name": "Hustle Harder",
+      "location": "North America",
+      "address": "125, Northfield Avenue, Hutton Park, West Orange, Essex County, New Jersey, 07052, United States",
+      "phone": "9736151283",
+      "email": "HustleHarder2700@gmail.com",
+      "website": "https://www.hustle-harder.net/",
+      "categories": ["Business Services", "Consulting"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "Business services and consulting based in New Jersey."
+    },
+    {
+      "id": "wolf-of-fitness",
+      "name": "Wolf of Fitness",
+      "location": "North America",
+      "address": "125, Northfield Avenue, Hutton Park, West Orange, Essex County, New Jersey, 07052, United States",
+      "phone": "8622535618",
+      "email": "Bryantmassingale@aol.com",
+      "website": "",
+      "categories": ["Health, Well-being and Self Care", "Retail"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "Health, well-being and fitness retail based in New Jersey."
+    },
+    {
+      "id": "shhh-wellness",
+      "name": "Shhh wellness",
+      "location": "UK",
+      "address": "",
+      "phone": "",
+      "email": "Marv@shhhmenopaudwellness.com",
+      "website": "www.shhhmenopausawellness.com",
+      "categories": ["Business Services", "Personal Care and Services"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "Menopause wellness and personal care services."
+    },
+    {
+      "id": "byfut-media",
+      "name": "Bygfut Media Ltd.",
+      "location": "UK",
+      "address": "",
+      "phone": "",
+      "email": "info@byfutsocialmedia.com",
+      "website": "https://www.byfutsocialmedia.com/website-design/",
+      "categories": ["Business Services"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "Social media and website design services."
+    },
+    {
+      "id": "ultra-building-service",
+      "name": "ultra building service",
+      "location": "UK",
+      "address": "",
+      "phone": "07801979570",
+      "email": "ultrabservices@gmail.com",
+      "website": "",
+      "categories": ["Business Services"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "Building services based in the UK."
+    },
+    {
+      "id": "iconi-auto",
+      "name": "Iconi auto styling",
+      "location": "UK",
+      "address": "",
+      "phone": "+44 20 8703 6803",
+      "email": "info@iconixautostyling.com",
+      "website": "iconixautostyling.com",
+      "categories": ["Business Services", "Travel and Transportation"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "Auto styling and transport-related services."
+    },
+    {
+      "id": "brands-aid-ltd",
+      "name": "Brands Aid ltd",
+      "location": "West Africa",
+      "address": "",
+      "phone": "0546944411",
+      "email": "info@brandsaidgh.com",
+      "website": "www.brandsaidgh.com",
+      "categories": ["Business Services"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "Business services based in Ghana."
+    },
+    {
+      "id": "placeholder-09",
+      "name": "[BUSINESS NAME 09]",
+      "location": "UK",
+      "address": "[ADDRESS]",
+      "phone": "[PHONE]",
+      "email": "[EMAIL]",
+      "website": "",
+      "categories": ["Consulting"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "[PLACEHOLDER] — awaiting approved business data."
+    },
+    {
+      "id": "placeholder-10",
+      "name": "[BUSINESS NAME 10]",
+      "location": "Europe",
+      "address": "[ADDRESS]",
+      "phone": "[PHONE]",
+      "email": "[EMAIL]",
+      "website": "",
+      "categories": ["Retail"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "[PLACEHOLDER] — awaiting approved business data."
+    },
+    {
+      "id": "placeholder-11",
+      "name": "[BUSINESS NAME 11]",
+      "location": "North America",
+      "address": "[ADDRESS]",
+      "phone": "[PHONE]",
+      "email": "[EMAIL]",
+      "website": "",
+      "categories": ["Entertainment"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "[PLACEHOLDER] — awaiting approved business data."
+    },
+    {
+      "id": "placeholder-12",
+      "name": "[BUSINESS NAME 12]",
+      "location": "Asia",
+      "address": "[ADDRESS]",
+      "phone": "[PHONE]",
+      "email": "[EMAIL]",
+      "website": "",
+      "categories": ["Education"],
+      "image": "assets/img/bei-logo.webp",
+      "description": "[PLACEHOLDER] — awaiting approved business data."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <link rel="icon" href="favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Login / Register — Black Entrepreneurs International</title>
+<meta name="description" content="Log in or register with Black Entrepreneurs International to claim your business listing and keep it up to date.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bei.css">
+</head>
+<body data-page="auth">
+<div class="grain" aria-hidden="true"></div>
+<div id="bei-header"></div>
+<main id="content">
+
+  <div class="auth">
+    <div class="auth__visual">
+      <div class="img-treat" style="position:absolute;inset:0"><img src="assets/img/bei-event-team.jpg" alt="The BEI team at a business exhibition" loading="lazy"></div>
+      <div class="auth__visual-copy">
+        <span class="meta">Black Entrepreneurs International</span>
+        <h2>Building Black<br>Owned Businesses</h2>
+        <p style="max-width:38ch;color:var(--bone);margin-top:16px">Claim your business account, update your details and connect with entrepreneurs across the world.</p>
+      </div>
+    </div>
+
+    <div class="auth__panel">
+      <div class="meta">Welcome to BEI</div>
+      <h2 class="h-display" style="margin-top:12px">Your <span class="pricing__muted">account.</span></h2>
+      <div class="auth__tabs" data-tabs>
+        <button type="button" class="is-active" data-pane="pane-login">Log in</button>
+        <button type="button" data-pane="pane-register">Register</button>
+        <button type="button" data-pane="pane-recover">Recover</button>
+      </div>
+
+      <div class="auth__pane is-active" id="pane-login">
+        <form data-demo-form>
+          <div class="form-field"><label for="l-user">Username or email address</label><input id="l-user" type="text" required></div>
+          <div class="form-field"><label for="l-pass">Password</label><input id="l-pass" type="password" required></div>
+          <label class="checkline"><input type="checkbox" name="remember"> <span>Remember me</span></label>
+          <button class="auth__submit" type="submit">Log in <span>&rarr;</span></button>
+          <p class="auth__aside">Don't have an account? <a href="#" data-pane-jump="pane-register">Register</a> · Lost your password? <a href="#" data-pane-jump="pane-recover">Recover it</a></p>
+          <p class="meta meta--dark" data-form-msg style="display:none;margin-top:16px"></p>
+        </form>
+      </div>
+
+      <div class="auth__pane" id="pane-register">
+        <form data-demo-form>
+          <div class="form-row">
+            <div class="form-field"><label for="r-user">Username *</label><input id="r-user" type="text" required></div>
+            <div class="form-field"><label for="r-email">Email *</label><input id="r-email" type="email" required></div>
+          </div>
+          <div class="form-field"><label for="r-pass">Password *</label><input id="r-pass" type="password" required></div>
+          <div class="form-row">
+            <div class="form-field"><label for="r-first">First name *</label><input id="r-first" type="text" required></div>
+            <div class="form-field"><label for="r-last">Last name *</label><input id="r-last" type="text" required></div>
+          </div>
+          <div class="form-field"><label for="r-web">Website</label><input id="r-web" type="url" placeholder="https://"></div>
+          <div class="form-field"><label for="r-bio">About / Bio (business) *</label><textarea id="r-bio" required></textarea></div>
+          <label class="checkline"><input type="checkbox" required> <span>I agree to the <a href="privacy-policy.html">Privacy &amp; Policy</a> *</span></label>
+          <label class="checkline"><input type="checkbox" required> <span>I agree with all <a href="terms-and-conditions.html">terms &amp; conditions</a> *</span></label>
+          <label class="checkline"><input type="checkbox"> <span>Subscribe to our newsletter</span></label>
+          <button class="auth__submit" type="submit">Register now <span>&rarr;</span></button>
+          <p class="auth__aside">Already have an account? <a href="#" data-pane-jump="pane-login">Log in</a></p>
+          <p class="meta meta--dark" data-form-msg style="display:none;margin-top:16px"></p>
+        </form>
+      </div>
+
+      <div class="auth__pane" id="pane-recover">
+        <form data-demo-form>
+          <p class="meta meta--dark" style="margin-bottom:20px">Lost your password?</p>
+          <p style="font-size:.9rem;color:#5d5449;max-width:50ch">Please enter your email address. You will receive a link to create a new password via email.</p>
+          <div class="form-field"><label for="rec-email">E-mail</label><input id="rec-email" type="email" required></div>
+          <button class="auth__submit" type="submit">Get new password <span>&rarr;</span></button>
+          <p class="auth__aside">Remembered it? <a href="#" data-pane-jump="pane-login">Log in</a></p>
+          <p class="meta meta--dark" data-form-msg style="display:none;margin-top:16px"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+<div id="bei-footer"></div>
+<script src="assets/js/bei.js"></script>
+</body>
+</html>

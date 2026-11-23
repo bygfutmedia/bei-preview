@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <link rel="icon" href="favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Businesses — BEI Business Directory</title>
+<meta name="description" content="Search the BEI business directory. Filter Black owned businesses by location and category, and view them in grid, list or map layouts.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bei.css">
+</head>
+<body data-page="directory">
+<div class="grain" aria-hidden="true"></div>
+<div id="bei-header"></div>
+<main id="content">
+
+  <section class="page-hero">
+    <div class="meta" data-reveal>Home &nbsp;/&nbsp; All Businesses</div>
+    <div class="page-hero__grid">
+      <h1 class="page-hero__title" data-reveal style="--d:80ms">All <em>Businesses</em></h1>
+      <div class="page-hero__aside" data-reveal style="--d:160ms"><p>A directory of Black owned businesses across the world. Filter, explore, connect.</p></div>
+    </div>
+  </section>
+
+  <section class="section section--ink-2" data-nav="dark" data-directory>
+    <div class="dir-toolbar" data-reveal>
+      <div class="field"><label for="d-search">Search</label><input id="d-search" type="search" data-search placeholder="What are you looking for?"></div>
+      <div class="field">
+        <label for="d-loc">Select Location</label>
+        <select id="d-loc" data-filter="location">
+          <option value="">All locations</option>
+          <option value="Asia">Asia</option><option value="Caribbean">Caribbean</option><option value="East Africa">East Africa</option>
+          <option value="Europe">Europe</option><option value="North Africa">North Africa</option><option value="North America">North America</option>
+          <option value="Oceania">Oceania</option><option value="South Africa">South Africa</option><option value="South America">South America</option>
+          <option value="UK">UK</option><option value="West Africa">West Africa</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="d-cat">Category</label>
+        <select id="d-cat" data-filter="category">
+          <option value="">All categories</option>
+          <option value="Accounting">Accounting</option><option value="Automotive">Automotive</option>
+          <option value="Business Services">Business Services</option><option value="Business Support &amp; Supplies">Business Support &amp; Supplies</option>
+          <option value="Charities">Charities</option><option value="Computers &amp; Electronics">Computers &amp; Electronics</option>
+          <option value="Construction &amp; Contractors">Construction &amp; Contractors</option><option value="Consulting">Consulting</option>
+          <option value="Education">Education</option><option value="Entertainment">Entertainment</option>
+          <option value="Food &amp; Dining">Food &amp; Dining</option><option value="Health, Well-being and Self Care">Health, Well-being and Self Care</option>
+          <option value="Home and Garden">Home and Garden</option><option value="Hospitality">Hospitality</option>
+          <option value="Information Technology">Information Technology</option><option value="Legal &amp; Financial">Legal &amp; Financial</option>
+          <option value="Manufacturing, Wholesale, Distribution">Manufacturing, Wholesale, Distribution</option>
+          <option value="Personal Care and Services">Personal Care and Services</option><option value="Property / Real Estate">Property / Real Estate</option>
+          <option value="Retail">Retail</option><option value="Travel and Transportation">Travel and Transportation</option>
+        </select>
+      </div>
+      <div class="viewtoggle" aria-label="Layout style">
+        <button type="button" class="is-active" data-view="list">List</button>
+        <button type="button" data-view="grid">Grid</button>
+        <button type="button" data-view="map">Map</button>
+      </div>
+    </div>
+
+    <div class="dir-toolbar" style="border-top:0" data-reveal>
+      <div class="field"><label for="d-radius">Radius Search</label><input id="d-radius" type="text" placeholder="Miles — [NUMBER]"></div>
+      <div class="field"><label>&nbsp;</label><button class="editorial-link" type="button" data-reset style="font-size:.64rem">Reset Filters</button></div>
+      <div></div><div></div>
+    </div>
+
+    <div class="dir-count" data-count>12 businesses found</div>
+
+    <div class="bizgrid">
+      <a class="bizgrid__card" href="directory.html" data-location="North America" data-category="Business Services" data-search-text="Rulrr.com Miami"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Rulrr.com" loading="lazy"></div><h3>Rulrr.com</h3><p>Miami, United States</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="North America" data-category="Business Services" data-search-text="Hustle Harder New Jersey"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Hustle Harder" loading="lazy"></div><h3>Hustle Harder</h3><p>New Jersey, United States</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="North America" data-category="Health, Well-being and Self Care" data-search-text="Wolf of Fitness New Jersey"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Wolf of Fitness" loading="lazy"></div><h3>Wolf of Fitness</h3><p>New Jersey, United States</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="UK" data-category="Personal Care and Services" data-search-text="Shhh wellness menopause"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Shhh wellness" loading="lazy"></div><h3>Shhh wellness</h3><p>[LOCATION]</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="UK" data-category="Business Services" data-search-text="Bygfut Media Ltd. social media"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Bygfut Media Ltd." loading="lazy"></div><h3>Bygfut Media Ltd.</h3><p>[LOCATION]</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="UK" data-category="Business Services" data-search-text="ultra building service"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Ultra building service" loading="lazy"></div><h3>ultra building service</h3><p>[LOCATION]</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="UK" data-category="Travel and Transportation" data-search-text="Iconi auto styling"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Iconi auto styling" loading="lazy"></div><h3>Iconi auto styling</h3><p>[LOCATION]</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="West Africa" data-category="Business Services" data-search-text="Brands Aid ltd Ghana"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Brands Aid ltd" loading="lazy"></div><h3>Brands Aid ltd</h3><p>Ghana</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="UK" data-category="Consulting" data-search-text="placeholder business 09"><div class="img-treat"><img src="assets/img/placeholder-business.svg" alt="Placeholder business image" loading="lazy"></div><h3>[BUSINESS NAME 09]</h3><p>[LOCATION]</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="Europe" data-category="Retail" data-search-text="placeholder business 10"><div class="img-treat"><img src="assets/img/placeholder-business.svg" alt="Placeholder business image" loading="lazy"></div><h3>[BUSINESS NAME 10]</h3><p>[LOCATION]</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="North America" data-category="Entertainment" data-search-text="placeholder business 11"><div class="img-treat"><img src="assets/img/placeholder-business.svg" alt="Placeholder business image" loading="lazy"></div><h3>[BUSINESS NAME 11]</h3><p>[LOCATION]</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="Asia" data-category="Education" data-search-text="placeholder business 12"><div class="img-treat"><img src="assets/img/placeholder-business.svg" alt="Placeholder business image" loading="lazy"></div><h3>[BUSINESS NAME 12]</h3><p>[LOCATION]</p></a>
+    </div>
+
+    <a class="bizrow" href="directory.html" data-location="North America" data-category="Business Services" data-search-text="Rulrr.com Business Services Information Technology Retail Miami jeff@rulrr.com"><span class="bizrow__num">01</span><span class="img-treat bizrow__img"><img src="assets/img/bei-logo.webp" alt="Rulrr.com" loading="lazy"></span><span><span class="bizrow__name">Rulrr.com</span><span class="bizrow__info"><span>Brickell, Miami, Miami-Dade County, Florida, 33131, United States</span><span>+1 786-692-8760</span><span>jeff@rulrr.com</span><span>https://www.rulrr.com/</span></span><span class="bizrow__tags"><span class="tag">Business Services</span><span class="tag">Information Technology</span><span class="tag">Retail</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="North America" data-category="Business Services" data-search-text="Hustle Harder Business Services Consulting New Jersey"><span class="bizrow__num">02</span><span class="img-treat bizrow__img"><img src="assets/img/bei-logo.webp" alt="Hustle Harder" loading="lazy"></span><span><span class="bizrow__name">Hustle Harder</span><span class="bizrow__info"><span>125, Northfield Avenue, Hutton Park, West Orange, Essex County, New Jersey, 07052, United States</span><span>9736151283</span><span>HustleHarder2700@gmail.com</span><span>https://www.hustle-harder.net/</span></span><span class="bizrow__tags"><span class="tag">Business Services</span><span class="tag">Consulting</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="North America" data-category="Health, Well-being and Self Care" data-search-text="Wolf of Fitness Health Well-being Retail New Jersey"><span class="bizrow__num">03</span><span class="img-treat bizrow__img"><img src="assets/img/bei-logo.webp" alt="Wolf of Fitness" loading="lazy"></span><span><span class="bizrow__name">Wolf of Fitness</span><span class="bizrow__info"><span>125, Northfield Avenue, Hutton Park, West Orange, Essex County, New Jersey, 07052, United States</span><span>8622535618</span><span>Bryantmassingale@aol.com</span></span><span class="bizrow__tags"><span class="tag">Health, Well-being and Self Care</span><span class="tag">Retail</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="UK" data-category="Personal Care and Services" data-search-text="Shhh wellness menopause"><span class="bizrow__num">04</span><span class="img-treat bizrow__img"><img src="assets/img/bei-logo.webp" alt="Shhh wellness" loading="lazy"></span><span><span class="bizrow__name">Shhh wellness</span><span class="bizrow__info"><span>Marv@shhhmenopaudwellness.com</span><span>www.shhhmenopausawellness.com</span></span><span class="bizrow__tags"><span class="tag">Business Services</span><span class="tag">Personal Care and Services</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="UK" data-category="Business Services" data-search-text="Bygfut Media Ltd. social media"><span class="bizrow__num">05</span><span class="img-treat bizrow__img"><img src="assets/img/bei-logo.webp" alt="Bygfut Media Ltd." loading="lazy"></span><span><span class="bizrow__name">Bygfut Media Ltd.</span><span class="bizrow__info"><span>info@byfutsocialmedia.com</span><span>https://www.byfutsocialmedia.com/website-design/</span></span><span class="bizrow__tags"><span class="tag">Business Services</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="UK" data-category="Business Services" data-search-text="ultra building service"><span class="bizrow__num">06</span><span class="img-treat bizrow__img"><img src="assets/img/bei-logo.webp" alt="Ultra building service" loading="lazy"></span><span><span class="bizrow__name">ultra building service</span><span class="bizrow__info"><span>07801979570</span><span>ultrabservices@gmail.com</span></span><span class="bizrow__tags"><span class="tag">Business Services</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="UK" data-category="Travel and Transportation" data-search-text="Iconi auto styling"><span class="bizrow__num">07</span><span class="img-treat bizrow__img"><img src="assets/img/bei-logo.webp" alt="Iconi auto styling" loading="lazy"></span><span><span class="bizrow__name">Iconi auto styling</span><span class="bizrow__info"><span>+44 20 8703 6803</span><span>info@iconixautostyling.com</span><span>iconixautostyling.com</span></span><span class="bizrow__tags"><span class="tag">Business Services</span><span class="tag">Travel and Transportation</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="West Africa" data-category="Business Services" data-search-text="Brands Aid ltd Ghana"><span class="bizrow__num">08</span><span class="img-treat bizrow__img"><img src="assets/img/bei-logo.webp" alt="Brands Aid ltd" loading="lazy"></span><span><span class="bizrow__name">Brands Aid ltd</span><span class="bizrow__info"><span>0546944411</span><span>info@brandsaidgh.com</span><span>www.brandsaidgh.com</span></span><span class="bizrow__tags"><span class="tag">Business Services</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="UK" data-category="Consulting" data-search-text="placeholder business 09"><span class="bizrow__num">09</span><span class="img-treat bizrow__img"><img src="assets/img/placeholder-business.svg" alt="Placeholder business image" loading="lazy"></span><span><span class="bizrow__name">[BUSINESS NAME 09]</span><span class="bizrow__info"><span>[ADDRESS]</span><span>[PHONE]</span><span>[EMAIL]</span></span><span class="bizrow__tags"><span class="tag">Consulting</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="Europe" data-category="Retail" data-search-text="placeholder business 10"><span class="bizrow__num">10</span><span class="img-treat bizrow__img"><img src="assets/img/placeholder-business.svg" alt="Placeholder business image" loading="lazy"></span><span><span class="bizrow__name">[BUSINESS NAME 10]</span><span class="bizrow__info"><span>[ADDRESS]</span><span>[PHONE]</span><span>[EMAIL]</span></span><span class="bizrow__tags"><span class="tag">Retail</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="North America" data-category="Entertainment" data-search-text="placeholder business 11"><span class="bizrow__num">11</span><span class="img-treat bizrow__img"><img src="assets/img/placeholder-business.svg" alt="Placeholder business image" loading="lazy"></span><span><span class="bizrow__name">[BUSINESS NAME 11]</span><span class="bizrow__info"><span>[ADDRESS]</span><span>[PHONE]</span><span>[EMAIL]</span></span><span class="bizrow__tags"><span class="tag">Entertainment</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <a class="bizrow" href="directory.html" data-location="Asia" data-category="Education" data-search-text="placeholder business 12"><span class="bizrow__num">12</span><span class="img-treat bizrow__img"><img src="assets/img/placeholder-business.svg" alt="Placeholder business image" loading="lazy"></span><span><span class="bizrow__name">[BUSINESS NAME 12]</span><span class="bizrow__info"><span>[ADDRESS]</span><span>[PHONE]</span><span>[EMAIL]</span></span><span class="bizrow__tags"><span class="tag">Education</span></span></span><span class="bizrow__arrow">&rarr;</span></a>
+    <div class="dir-empty">No businesses match those filters. Try another search.</div>
+
+    <nav class="pagination" aria-label="Directory pages" style="display:flex;gap:10px;align-items:center;padding-top:40px;border-top:1px solid var(--rule);margin-top:20px;font-size:.72rem">
+      <span class="meta" style="margin-right:10px">01 / 11</span>
+      <a class="editorial-link" href="all-businesses.html" style="padding:6px 0">1</a>
+      <a class="editorial-link" href="all-businesses.html" style="padding:6px 0">2</a>
+      <a class="editorial-link" href="all-businesses.html" style="padding:6px 0">3 &nbsp;&rarr;</a>
+      <span class="meta meta--muted" style="margin-left:auto">87 businesses found on source</span>
+    </nav>
+  </section>
+
+  <section class="cta-band"><div class="meta cta-band__meta" data-reveal>List your business</div><h2 class="display" data-reveal style="--d:80ms">Your business belongs <em>in the directory.</em></h2><a class="cta-inline" href="membership.html" data-reveal style="--d:160ms">Get started <span>&rarr;</span></a></section>
+</main>
+<div id="bei-footer"></div>
+<script src="assets/js/bei.js"></script>
+</body>
+</html>

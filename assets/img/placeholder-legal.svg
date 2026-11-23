@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Placeholder image for Legal and Financial category">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#16120e"/><stop offset="1" stop-color="#030303"/></linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#b7894f" stroke-opacity=".08"/></pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/><rect width="1200" height="800" fill="url(#grid)"/>
+  <path d="M650 150l380 110v300l-380 110z" fill="none" stroke="#b7894f" stroke-opacity=".4" stroke-width="1.5"/>
+  <path d="M650 150v520M650 150l380 110M650 670l380 -110" stroke="#b7894f" stroke-opacity=".2"/>
+  <path d="M740 340h200M740 400h200M740 460h120" stroke="#b7894f" stroke-opacity=".25"/>
+  <text x="70" y="150" fill="#d8bc91" font-family="Arial,sans-serif" font-size="22" letter-spacing="7">04 / LEGAL &amp; FINANCIAL</text>
+  <text x="70" y="690" fill="#f3ede3" font-family="Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="-2">PLACEHOLDER</text>
+  <text x="72" y="735" fill="#9b9183" font-family="Arial,sans-serif" font-size="19" letter-spacing="4">REPLACE WITH APPROVED CATEGORY PHOTOGRAPHY</text>
+</svg>

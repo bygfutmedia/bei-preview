@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <link rel="icon" href="favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search Businesses — BEI Directory</title>
+<meta name="description" content="Search Black owned businesses by name, location, category or keyword in the BEI business directory.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bei.css">
+</head>
+<body data-page="directory">
+<div class="grain" aria-hidden="true"></div>
+<div id="bei-header"></div>
+<main id="content">
+  <section class="page-hero">
+    <div class="meta" data-reveal>Home &nbsp;/&nbsp; Business Directory &nbsp;/&nbsp; Search Businesses</div>
+    <div class="page-hero__grid">
+      <h1 class="page-hero__title" data-reveal style="--d:80ms">Search <em>Businesses</em></h1>
+      <div class="page-hero__aside" data-reveal style="--d:160ms"><p>What are you looking for? Search by name, service, city or keyword.</p></div>
+    </div>
+  </section>
+
+  <section class="section section--ink-2" data-nav="dark" data-bei-directory data-source="data/businesses.json" data-per-page="12">
+    <div class="dir-toolbar" data-reveal>
+      <div class="field"><label for="s-q">Search term</label><input id="s-q" type="search" data-dir-search placeholder="Name, service, city or keyword"></div>
+      <div class="field"><label for="s-loc">Select location</label><select id="s-loc" data-dir-location><option value="">All locations</option><option>Asia</option><option>Caribbean</option><option>East Africa</option><option>Europe</option><option>North Africa</option><option>North America</option><option>Oceania</option><option>South Africa</option><option>South America</option><option>UK</option><option>West Africa</option></select></div>
+      <div class="field"><label for="s-cat">Category</label><select id="s-cat" data-dir-category><option value="">All categories</option><option>Accounting</option><option>Automotive</option><option>Business Services</option><option>Consulting</option><option>Education</option><option>Entertainment</option><option>Food &amp; Dining</option><option>Health, Well-being and Self Care</option><option>Information Technology</option><option>Personal Care and Services</option><option>Retail</option><option>Travel and Transportation</option></select></div>
+      <div class="viewtoggle">
+        <button type="button" class="is-active" data-dir-view="list" aria-label="List view">List</button>
+        <button type="button" data-dir-view="grid" aria-label="Grid view">Grid</button>
+      </div>
+    </div>
+    <div class="dir-toolbar" style="border-top:0" data-reveal>
+      <div class="field"><label>&nbsp;</label><button class="cta-inline" type="button" data-dir-submit>Search <span>&rarr;</span></button></div>
+      <div class="field"><label>&nbsp;</label><button class="dir-reset-btn" type="button" data-dir-reset>Reset filters</button></div>
+      <div></div><div></div>
+    </div>
+    <div class="dir-count" data-dir-count aria-live="polite"></div>
+    <div data-dir-results aria-live="polite"></div>
+    <div style="padding-top:34px"><a class="cta-inline" href="all-businesses.html">Open the full directory <span>&rarr;</span></a></div>
+  </section>
+  <section class="cta-band"><div class="meta cta-band__meta" data-reveal>Can't find your business?</div><h2 class="display" data-reveal style="--d:80ms">Claim your listing and <em>be found.</em></h2><a class="cta-inline" href="sign-in.html" data-reveal style="--d:160ms">Get started <span>&rarr;</span></a></section>
+</main>
+<div id="bei-footer"></div>
+<script src="assets/js/bei.js"></script>
+<script src="assets/js/bei-directory.js"></script>
+</body>
+</html>

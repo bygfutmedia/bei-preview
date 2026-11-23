@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <link rel="icon" href="favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Categories — BEI Business Directory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bei.css">
+</head>
+<body data-page="directory">
+<div class="grain" aria-hidden="true"></div>
+<div id="bei-header"></div>
+<main id="content">
+  <section class="page-hero">
+    <div class="meta" data-reveal>Home &nbsp;/&nbsp; All Categories</div>
+    <div class="page-hero__grid"><h1 class="page-hero__title" data-reveal style="--d:80ms">All <em>Categories</em></h1><div class="page-hero__aside" data-reveal style="--d:160ms"><p>Find Black owned businesses by the work they do.</p></div></div>
+  </section>
+  <section class="section section--paper" data-nav="light">
+    <div id="category-list"></div>
+  </section>
+  <section class="cta-band"><div class="meta cta-band__meta" data-reveal>Your category</div><h2 class="display" data-reveal style="--d:80ms">Not listed yet? <em>Join BEI.</em></h2><a class="cta-inline" href="membership.html" data-reveal style="--d:160ms">Get started <span>&rarr;</span></a></section>
+</main>
+<div id="bei-footer"></div>
+<script>
+(function(){
+  var cats = ["Accounting","Automotive","Business Services","Business Support & Supplies","Charities","Computers & Electronics","Construction & Contractors","Consulting","Education","Entertainment","Food & Dining","Health, Well-being and Self Care","Home and Garden","Hospitality","Information Technology","Legal & Financial","Manufacturing, Wholesale, Distribution","Personal Care and Services","Property / Real Estate","Retail","Travel and Transportation"];
+  var host = document.getElementById('category-list');
+  host.innerHTML = cats.map(function(c,i){
+    var slug = c.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+    return '<a class="event-row" href="single-category.html?category='+encodeURIComponent(slug)+'" data-reveal style="--d:'+((i%4)*40)+'ms"><div class="event-row__date">'+String(i+1).padStart(2,'0')+'</div><div><h3>'+c+'</h3><div class="meta meta--muted">[BUSINESS COUNT] businesses</div></div><span class="bizrow__arrow">&rarr;</span></a>';
+  }).join('');
+})();
+</script>
+<script src="assets/js/bei.js"></script>
+</body>
+</html>

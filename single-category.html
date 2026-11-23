@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <link rel="icon" href="favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Category — BEI Business Directory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/bei.css">
+</head>
+<body data-page="directory">
+<div class="grain" aria-hidden="true"></div>
+<div id="bei-header"></div>
+<main id="content">
+  <section class="page-hero">
+    <div class="meta" data-reveal>Home &nbsp;/&nbsp; Business Directory &nbsp;/&nbsp; Category</div>
+    <div class="page-hero__grid">
+      <h1 class="page-hero__title" data-reveal style="--d:80ms" data-query-title="category">Category</h1>
+      <div class="page-hero__aside" data-reveal style="--d:160ms"><p>Black owned businesses in this category. [BUSINESS COUNT]</p></div>
+    </div>
+  </section>
+  <section class="section section--ink-2" data-nav="dark" data-directory>
+    <div class="dir-toolbar" data-reveal>
+      <div class="field"><label for="c-search">Search within category</label><input id="c-search" type="search" data-search placeholder="What are you looking for?"></div>
+      <div class="field"><label for="c-loc">Select Location</label><select id="c-loc" data-filter="location"><option value="">All locations</option><option>Asia</option><option>Caribbean</option><option>East Africa</option><option>Europe</option><option>North Africa</option><option>North America</option><option>Oceania</option><option>South Africa</option><option>South America</option><option>UK</option><option>West Africa</option></select></div>
+      <div></div><div></div>
+    </div>
+    <div class="dir-count" data-count>3 businesses found</div>
+    <div class="bizgrid" style="display:grid">
+      <a class="bizgrid__card" href="directory.html" data-location="North America" data-category="Business Services" data-search-text="Rulrr.com Miami"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Rulrr.com" loading="lazy"></div><h3>Rulrr.com</h3><p>Miami, United States</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="North America" data-category="Business Services" data-search-text="Hustle Harder New Jersey"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Hustle Harder" loading="lazy"></div><h3>Hustle Harder</h3><p>New Jersey, United States</p></a>
+      <a class="bizgrid__card" href="directory.html" data-location="West Africa" data-category="Business Services" data-search-text="Brands Aid ltd Ghana"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Brands Aid ltd" loading="lazy"></div><h3>Brands Aid ltd</h3><p>Ghana</p></a>
+    </div>
+    <div class="dir-empty">No businesses match those filters.</div>
+    <p class="meta meta--muted" style="margin-top:34px" data-reveal>Showing a sample set. Full category listings are managed in the directory plugin on the live site.</p>
+  </section>
+  <section class="cta-band"><div class="meta cta-band__meta" data-reveal>List your business</div><h2 class="display" data-reveal style="--d:80ms">Add your business to <em>this category.</em></h2><a class="cta-inline" href="membership.html" data-reveal style="--d:160ms">Get started <span>&rarr;</span></a></section>
+</main>
+<div id="bei-footer"></div>
+<script src="assets/js/bei.js"></script>
+</body>
+</html>
