@@ -478,7 +478,7 @@
   });
 
   /* ---------- Sign-in pane from URL hash --------------------------------- */
-  if (location.hash.indexOf('pane-') === 0) {
+  if (location.hash.indexOf('#pane-') === 0) {
     var hashPane = document.getElementById(location.hash.slice(1));
     var hashTab = document.querySelector('[data-pane="' + location.hash.slice(1) + '"]');
     var hashPanel = hashTab && hashTab.closest('.auth__panel');
@@ -501,6 +501,34 @@
   document.querySelectorAll('[data-query-text]').forEach(function (el) {
     var val = params.get(el.getAttribute('data-query-text'));
     if (val) el.textContent = val;
+  });
+
+  /* ---------- Category search results: found vs empty states ------------ */
+  var categoryRoot = document.querySelector('[data-category-results]');
+  if (categoryRoot) {
+    var categoryKey = params.get('category') || '';
+    var categoriesWithResults = ['entertainment', 'food-and-dining', 'education', 'legal-financial', 'business-services', 'consulting', 'retail'];
+    var hasResults = categoriesWithResults.indexOf(categoryKey) !== -1;
+    var grid = categoryRoot.querySelector('.bizgrid');
+    var count = categoryRoot.querySelector('[data-count]');
+    var emptyState = categoryRoot.querySelector('[data-empty-state]');
+    var secondary = categoryRoot.querySelector('.results-secondary');
+    if (grid) grid.style.display = hasResults ? 'grid' : 'none';
+    if (count) count.style.display = hasResults ? 'block' : 'none';
+    if (emptyState) emptyState.classList.toggle('is-visible', !hasResults);
+    if (secondary) secondary.classList.toggle('is-visible', hasResults);
+  }
+
+  /* ---------- Auth-aware CTA + back links -------------------------------- */
+  document.querySelectorAll('[data-auth-cta]').forEach(function (link) {
+    link.href = window.localStorage.getItem('bei_signed_in') === 'true' ? 'dashboard.html' : 'membership.html';
+  });
+  document.querySelectorAll('[data-back]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (window.history.length > 1) window.history.back();
+      else window.location.href = 'all-businesses.html';
+    });
   });
 
   /* ---------- Honest form handling (no fake submissions) ---------------- */
