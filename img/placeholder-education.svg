@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-label="Placeholder image for Education category">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#16120e"/><stop offset="1" stop-color="#030303"/></linearGradient>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse"><path d="M60 0H0V60" fill="none" stroke="#b7894f" stroke-opacity=".08"/></pattern>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/><rect width="1200" height="800" fill="url(#grid)"/>
+  <path d="M550 190l480 -55v420l-480 55z" fill="none" stroke="#b7894f" stroke-opacity=".4" stroke-width="1.5"/>
+  <path d="M590 240l400 -45M590 320l400 -45M590 400l400 -45" stroke="#b7894f" stroke-opacity=".2"/>
+  <circle cx="1000" cy="610" r="80" fill="#b7894f" fill-opacity=".08"/>
+  <text x="70" y="150" fill="#d8bc91" font-family="Arial,sans-serif" font-size="22" letter-spacing="7">03 / EDUCATION</text>
+  <text x="70" y="690" fill="#f3ede3" font-family="Arial,sans-serif" font-size="62" font-weight="700" letter-spacing="-2">PLACEHOLDER</text>
+  <text x="72" y="735" fill="#9b9183" font-family="Arial,sans-serif" font-size="19" letter-spacing="4">REPLACE WITH APPROVED CATEGORY PHOTOGRAPHY</text>
+</svg>

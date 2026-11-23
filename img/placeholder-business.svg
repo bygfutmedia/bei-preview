@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Placeholder business image">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#16120e"/><stop offset="1" stop-color="#030303"/></linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#b7894f" stroke-opacity=".08"/></pattern>
+  </defs>
+  <rect width="600" height="400" fill="url(#g)"/><rect width="600" height="400" fill="url(#grid)"/>
+  <circle cx="420" cy="170" r="95" fill="none" stroke="#b7894f" stroke-opacity=".35"/>
+  <path d="M325 170h190M420 75v190" stroke="#b7894f" stroke-opacity=".18"/>
+  <text x="34" y="70" fill="#d8bc91" font-family="Arial,sans-serif" font-size="14" letter-spacing="5">BEI / DIRECTORY</text>
+  <text x="34" y="330" fill="#f3ede3" font-family="Arial,sans-serif" font-size="34" font-weight="700" letter-spacing="-1">PLACEHOLDER</text>
+  <text x="36" y="360" fill="#9b9183" font-family="Arial,sans-serif" font-size="12" letter-spacing="3">REPLACE WITH APPROVED BUSINESS PHOTO</text>
+</svg>

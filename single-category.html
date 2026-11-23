@@ -14,13 +14,13 @@
 <div id="bei-header"></div>
 <main id="content">
   <section class="page-hero">
-    <div class="meta" data-reveal>Home &nbsp;/&nbsp; Business Directory &nbsp;/&nbsp; Category</div>
+    <div class="meta" data-reveal><a href="index.html">Home</a> &nbsp;/&nbsp; <a href="all-businesses.html">Business Directory</a> &nbsp;/&nbsp; <span data-query-title="category">Category</span></div>
     <div class="page-hero__grid">
       <h1 class="page-hero__title" data-reveal style="--d:80ms" data-query-title="category">Category</h1>
       <div class="page-hero__aside" data-reveal style="--d:160ms"><p>Black owned businesses in this category. [BUSINESS COUNT]</p></div>
     </div>
   </section>
-  <section class="section section--ink-2" data-nav="dark" data-directory>
+  <section class="section section--ink-2 single-category" data-nav="dark" data-directory data-category-results>
     <div class="dir-toolbar" data-reveal>
       <div class="field"><label for="c-search">Search within category</label><input id="c-search" type="search" data-search placeholder="What are you looking for?"></div>
       <div class="field"><label for="c-loc">Select Location</label><select id="c-loc" data-filter="location"><option value="">All locations</option><option>Asia</option><option>Caribbean</option><option>East Africa</option><option>Europe</option><option>North Africa</option><option>North America</option><option>Oceania</option><option>South Africa</option><option>South America</option><option>UK</option><option>West Africa</option></select></div>
@@ -33,9 +33,38 @@
       <a class="bizgrid__card" href="directory.html" data-location="West Africa" data-category="Business Services" data-search-text="Brands Aid ltd Ghana"><div class="img-treat"><img src="assets/img/bei-logo.webp" alt="Brands Aid ltd" loading="lazy"></div><h3>Brands Aid ltd</h3><p>Ghana</p></a>
     </div>
     <div class="dir-empty">No businesses match those filters.</div>
+
+    <div class="results-secondary">
+      <a href="all-categories.html">Check other categories <span>&rarr;</span></a>
+      <a href="all-businesses.html">Back to directory <span>&rarr;</span></a>
+    </div>
+
+    <div class="results-empty" data-empty-state>
+      <h2 class="results-empty__title">No businesses in <span data-query-title="this category">this category</span> yet.</h2>
+      <p class="results-empty__copy">Be the first to list here, or explore the other categories to find Black owned businesses you can work with.</p>
+      <div class="results-empty__actions">
+        <a class="cta-inline" href="all-categories.html">Check other categories <span>&rarr;</span></a>
+        <a class="editorial-link" href="#" data-back>Return to previous page <i>&larr;</i></a>
+      </div>
+      <ul class="results-empty__cats">
+        <li><a href="single-category.html?category=entertainment">Entertainment</a></li>
+        <li><a href="single-category.html?category=food-and-dining">Food &amp; Dining</a></li>
+        <li><a href="single-category.html?category=education">Education</a></li>
+        <li><a href="single-category.html?category=legal-financial">Legal &amp; Financial</a></li>
+        <li><a href="single-category.html?category=accounting">Accounting</a></li>
+        <li><a href="single-category.html?category=automotive">Automotive</a></li>
+        <li><a href="single-category.html?category=business-services">Business Services</a></li>
+        <li><a href="single-category.html?category=consulting">Consulting</a></li>
+        <li><a href="single-category.html?category=health-well-being-and-self-care">Health &amp; Well-being</a></li>
+        <li><a href="single-category.html?category=retail">Retail</a></li>
+        <li><a href="single-category.html?category=travel-and-transportation">Travel &amp; Transportation</a></li>
+        <li><a href="all-categories.html">View all categories</a></li>
+      </ul>
+    </div>
+
     <p class="meta meta--muted" style="margin-top:34px" data-reveal>Showing a sample set. Full category listings are managed in the directory plugin on the live site.</p>
   </section>
-  <section class="cta-band"><div class="meta cta-band__meta" data-reveal>List your business</div><h2 class="display" data-reveal style="--d:80ms">Add your business to <em>this category.</em></h2><a class="cta-inline" href="membership.html" data-reveal style="--d:160ms">Get started <span>&rarr;</span></a></section>
+  <section class="cta-band"><div class="meta cta-band__meta" data-reveal>List your business</div><h2 class="display" data-reveal style="--d:80ms">Add your business to <em>this category.</em></h2><a class="cta-inline" href="membership.html" data-auth-cta data-reveal style="--d:160ms">Get started <span>&rarr;</span></a></section>
 </main>
 <div id="bei-footer"></div>
 <script src="assets/js/bei.js"></script>
