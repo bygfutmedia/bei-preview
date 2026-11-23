@@ -52,11 +52,11 @@
 <main class="stage">
   <section class="panel">
     <div class="panel__head"><h2>Mobile</h2><span>390 × 844 px</span></div>
-    <div class="frame frame--mobile"><iframe id="mobile" src="http://localhost:3000/index.html" title="Mobile preview"></iframe></div>
+    <div class="frame frame--mobile"><iframe id="mobile" src="index.html" title="Mobile preview"></iframe></div>
   </section>
   <section class="panel">
     <div class="panel__head"><h2>Tablet</h2><span>820 px viewport · scaled to fit</span></div>
-    <div class="frame frame--tablet"><div class="scale-wrap"><iframe id="tablet" src="http://localhost:3000/index.html" title="Tablet preview"></iframe></div></div>
+    <div class="frame frame--tablet"><div class="scale-wrap"><iframe id="tablet" src="index.html" title="Tablet preview"></iframe></div></div>
   </section>
 </main>
 
@@ -65,7 +65,7 @@
   var sel = document.getElementById('page');
   var m = document.getElementById('mobile');
   var t = document.getElementById('tablet');
-  var BASE = 'http://localhost:3000/';
+  var BASE = '';
   function set(){
     m.src = BASE + sel.value;
     t.src = BASE + sel.value;
